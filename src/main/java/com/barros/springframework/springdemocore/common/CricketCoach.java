@@ -1,4 +1,4 @@
-package com.barros.springframework.springdemocore.rest;
+package com.barros.springframework.springdemocore.common;
 
 import org.springframework.stereotype.Component;
 
