@@ -13,7 +13,7 @@ public class DemoController {
     private Coach myCoach;
 
     @Autowired
-    public DemoController(@Qualifier("trackCoach") Coach coach){ //change the qualifier name to the class you want to inject as the given example
+    public DemoController(Coach coach){ //change the qualifier name to the class you want to inject as the given example
         myCoach = coach;
     }
 
