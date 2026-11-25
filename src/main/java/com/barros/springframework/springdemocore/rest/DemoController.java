@@ -13,7 +13,7 @@ public class DemoController {
     private Coach myCoach;
 
     @Autowired
-    public DemoController(@Qualifier("cricketCoach") Coach coach){ //change the qualifier name to the class you want to inject as the given example
+    public DemoController(@Qualifier("swimCoach") Coach coach){ //change the qualifier name to the class you want to inject as the given example
         System.out.println("In constructor: " + getClass().getSimpleName());
         myCoach = coach;
     }
