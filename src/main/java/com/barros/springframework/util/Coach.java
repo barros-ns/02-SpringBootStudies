@@ -1,4 +1,4 @@
-package com.barros.springframework.springdemocore.common;
+package com.barros.springframework.util;
 
 public interface Coach {
     public String getDailyWorkout();

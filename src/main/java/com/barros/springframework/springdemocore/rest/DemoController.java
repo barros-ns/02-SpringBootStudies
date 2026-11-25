@@ -1,6 +1,6 @@
 package com.barros.springframework.springdemocore.rest;
 
-import com.barros.springframework.springdemocore.common.Coach;
+import com.barros.springframework.util.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
