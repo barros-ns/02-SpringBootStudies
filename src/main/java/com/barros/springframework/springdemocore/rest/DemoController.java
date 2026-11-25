@@ -2,6 +2,7 @@ package com.barros.springframework.springdemocore.rest;
 
 import com.barros.springframework.springdemocore.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +13,7 @@ public class DemoController {
     private Coach myCoach;
 
     @Autowired
-    public void setCoach(Coach coach){
+    public DemoController(@Qualifier("trackCoach") Coach coach){ //change the qualifier name to the class you want to inject as the given example
         myCoach = coach;
     }
 
